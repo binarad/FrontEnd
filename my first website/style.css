@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+.first-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.name {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    color: #df0429;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.center-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.center-content nav img {
+    width: 50px;
+}
+
+.center-content nav {
+    top: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #fff;
+    justify-content: center;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.nav-link:hover{
+    background-color: rgb(31, 31, 31);
+}
+
+.nav-link:active {
+    background-color: #df0429;
+}
+.right-content {
+    display: flex;
+    justify-content: right;
+    height: 100px;
+    object-position: left;
+}
+
+.burger {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+}
+
+.img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.img:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.img:active {
+    background-color: #df0429;
+}
+
+.main-content {
+    display: flex;
+}
+
+.left-side {
+    display: flex;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 75px;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    margin: 50px;
+    width: 50%;
+}
+
+.right-side {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+}
