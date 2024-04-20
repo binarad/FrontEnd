@@ -67,17 +67,13 @@ let itemsLoaded = 0;
 
 async function loadmore() {
 
-    let currentItems = 0
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${itemsCount}&offset=${itemsLoaded}`);
     const data = await response.json();
 
     itemsLoaded += itemsCount;
 
 
-
-    const loadmore = document.querySelector(".loadmore");
-
-    currentItems = data.results.length;
+     let currentItems = data.results.length;
 
     for(let i = currentItems; i < currentItems + 9; i++) {
         console.log(i)
