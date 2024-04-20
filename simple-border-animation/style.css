@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    gap: 5vw;
+}
+
+.animated_card, .animated_card2 {
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 500px;
+    width: 350px;
+    background-color: #222;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+span {
+    color: rgba(254, 254, 254, 0.1);
+    font-size: 100em;
+    z-index: 10;
+}
+
+.animated_card::before {
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 350px;
+    background-color: tomato;
+    border-radius: 15px;
+    z-index: -1;
+    transition: 0.3s;
+    animation: animate 2s linear infinite;
+}
+
+.animated_card:hover::before {
+    width: 362px;
+    height: 512px;
+}
+
+@keyframes animate {
+    50% {
+        filter: hue-rotate(350deg);
+    }
+}
+
+.animated_card2 {
+    overflow: hidden;
+}
+
+.animated_card2::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 180%;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+.animated_card2:hover::before {
+    animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animated_card2::after {
+    position: absolute;
+    content: '';
+    inset: 5px;
+    background: #222;
+    border-radius: 8px;
+}

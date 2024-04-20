@@ -42,7 +42,6 @@ html {
     background-color: rgba(40, 120, 120, 50%);
     border-radius: 10px;
     font-family: "Ubuntu Mono", monospace;
-
 }
 
 .center-nav-menu a:hover{
@@ -55,7 +54,6 @@ html {
 
 .icons {
     background-color: rgba(169, 169, 170, 50);
-    
     margin: 25px;
     display: flex;
     width: 150px;
