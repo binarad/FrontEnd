@@ -22,7 +22,7 @@ async function filterfunc() {
 
 
 async function PagesGenerator() {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=0&offset=0`);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=60&offset=60`);
     const data = await response.json();
     const main = document.querySelector('.main');
 
@@ -37,8 +37,8 @@ async function PagesGenerator() {
 
         const sprite = document.createElement("img");
         sprite.className ='pokemonSprite';
-        sprite.src = secdata.sprites.front_default; 
-        
+        sprite.src = secdata.sprites.front_default;        
+
 
         const name = document.createElement("p");
         name.className ='pokemonName';
@@ -73,11 +73,12 @@ async function loadmore() {
     itemsLoaded += itemsCount;
 
 
-     let currentItems = data.results.length;
+    let currentItems = data.results.length;
 
-    for(let i = currentItems; i < currentItems + 9; i++) {
-        console.log(i)
-    }
+    // for(let i = currentItems; i < currentItems + 9; i++) {
+    console.log(itemsCount);
+    console.log(itemsLoaded);
+    // }
     // response = fetch(`https://pokeapi.co/api/v2/pokemon?limit=${currentItems}&offset=0`)
 
     // data = response.json;
