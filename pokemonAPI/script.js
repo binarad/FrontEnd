@@ -1,32 +1,44 @@
 // I NEED TO DO A FILTER FUNCTION WHICH WILL COMPARE INPUT TO THE POKEMON NAMES
 
-async function filterfunc() {
-    
-    const pokemonSearch = document.querySelector("#pokemonName").value.toLowerCase();        
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=0&offset=0`);
 
-    if(!response.ok){
-        throw new Error("Could not fetch resource")
-    }
+const awe = async () => {
+    const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/ditto`)
+    const data = await resp.json();
 
-    const data = await response.json();
-    let blah = [];
 
-    for(let i = 0; i < data.results.length; i++){
-        blah.push(data.results[i].name)
-    }
-    let blah1 = blah.sort();
-    alert(blah1.reverse())
+
+    console.log(data.results );
+    const firstAbility = await fetch (`${data.abilities[0].ability.url}`)
+    const fistAbilityData = await firstAbility.json();
+
+    console.log(fistAbilityData);
+} 
+
+let input = document.getElementById('pokemonName')
+
+input.addEventListener('keyup', filterFunc);
+
+
+function filterFunc() {
+    const main = document.querySelector(".main");
+    const inputValue = document.querySelector("#pokemonName").value.toLowerCase();
+    let pages = main.querySelectorAll('.pokemonPage');
+    for(let i = 0; i < pages.length; i++) {
+        let name = pages[i].querySelector(".pokemonName");
+
+        if(name.innerHTML.toLowerCase().indexOf(inputValue) > -1) {
+            pages[i].style.display = "initial";
+        }else{
+            pages[i].style.display = 'none';
+        }
+    } 
     // то есть мне нужно сравнить как-то имя покемона с инпута с именами в бд и вывести покемонов у которых чары совпадат. КАК? 
 }
 
 
-async function PagesGenerator() {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=60&offset=60`);
-    const data = await response.json();
-    const main = document.querySelector('.main');
+const pageLoad = async (data, main) => {
+    for (let i = 0; i < data.results.length; i++) {
 
-    for(let i = 0; i < data.results.length; i++) {
         const resp = await fetch(`${data.results[i].url}`);
         const secdata = await resp.json();
 
@@ -42,27 +54,27 @@ async function PagesGenerator() {
 
         const name = document.createElement("p");
         name.className ='pokemonName';
-        name.textContent = secdata.name.toUpperCase(); // + secdata.name.slice(1);
-
-
-        const id = document.createElement("p");
-        id.className ='pokemonId';
-        id.textContent = secdata.id;
+        name.textContent = secdata.name.toUpperCase();
 
         main.appendChild(page);
         page.appendChild(sprite);
         page.appendChild(name);
-
-        // console.log(data.results.length);
-        // page.appendChild(id);
-        // console.log(secdata);
     }
+
+}
+
+async function PagesGenerator() {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=60&offset=0`);
+    const data = await response.json();
+    const main = document.querySelector('.main');
+
+    pageLoad(data, main);
     
 }
 
 
 const itemsCount =  60;
-let itemsLoaded = 0;
+let itemsLoaded = 60;
 
 
 async function loadmore() {
@@ -72,23 +84,17 @@ async function loadmore() {
 
     itemsLoaded += itemsCount;
 
+    const main = document.querySelector('.main');
 
-    let currentItems = data.results.length;
+    pageLoad(data, main);
 
-    // for(let i = currentItems; i < currentItems + 9; i++) {
     console.log(itemsCount);
     console.log(itemsLoaded);
-    // }
-    // response = fetch(`https://pokeapi.co/api/v2/pokemon?limit=${currentItems}&offset=0`)
-
-    // data = response.json;
-
-    // currentItems = data.results.length + 8;
-    
-    // console.log(currentItems);
 
 }
 
+
+// awe();
 // loadmore();
 PagesGenerator();
 // filterfunc();

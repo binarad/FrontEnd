@@ -14,6 +14,7 @@ body {
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -30,6 +31,8 @@ header {
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
+    /* position: fixed;      */
+    /* z-index: 9999; */
 }
 
 #pokemonName {
@@ -62,16 +65,17 @@ button:hover {
 }
 
 .main {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1px;
-    width: 40vw;
+    grid-template-columns: repeat(6, 100px) ;
+    /* gap: 50px; */
+    width: 60vw;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     border-radius: 10px;
-    align-content:centerя;
+    align-content: flex-start;
 }
 
 footer{
@@ -108,6 +112,7 @@ footer{
 .pokemonName, .pokemonId {
     font-size: 16px;
     font-weight: 700;
+    margin: 0 10px;
 }
 
 #loadmore {
