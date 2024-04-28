@@ -1,23 +1,8 @@
-// I NEED TO DO A FILTER FUNCTION WHICH WILL COMPARE INPUT TO THE POKEMON NAMES
-
-
-const awe = async () => {
-    const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/ditto`)
-    const data = await resp.json();
-
-
-
-    console.log(data.results );
-    const firstAbility = await fetch (`${data.abilities[0].ability.url}`)
-    const fistAbilityData = await firstAbility.json();
-
-    console.log(fistAbilityData);
-} 
 
 let input = document.getElementById('pokemonName')
-
 input.addEventListener('keyup', filterFunc);
 
+window.onload= () => {input.value = ''};
 
 function filterFunc() {
     const main = document.querySelector(".main");
@@ -32,7 +17,6 @@ function filterFunc() {
             pages[i].style.display = 'none';
         }
     } 
-    // то есть мне нужно сравнить как-то имя покемона с инпута с именами в бд и вывести покемонов у которых чары совпадат. КАК? 
 }
 
 
@@ -41,11 +25,15 @@ const pageLoad = async (data, main) => {
 
         const resp = await fetch(`${data.results[i].url}`);
         const secdata = await resp.json();
+        const stats = secdata.stats;
+
 
         const page = document.createElement("a");
         page.className ='pokemonPage';
-        page.href = "#";
         
+        const frontSide = document.createElement("div");
+        frontSide.className = "front";
+
 
         const sprite = document.createElement("img");
         sprite.className ='pokemonSprite';
@@ -56,15 +44,55 @@ const pageLoad = async (data, main) => {
         name.className ='pokemonName';
         name.textContent = secdata.name.toUpperCase();
 
+
+        const backSide = document.createElement("div");
+        backSide.className = "back";
+        
+        const hp = document.createElement('p')
+        hp.className = 'hp';
+        hp.textContent = "HP " + stats[0].base_stat;
+
+        const defense = document.createElement('p')
+        defense.className = 'def';
+        defense.textContent = "DEFENSE " + stats[2].base_stat;
+
+        const damage = document.createElement('p')
+        damage.className = 'dmg';
+        damage.textContent = 'DAMAGE ' + stats[1].base_stat;
+
+
+        const speed = document.createElement('p')
+        speed.className = 'speed';
+        speed.textContent = 'SPEED ' + stats[5].base_stat;
+
+
+        page.addEventListener('click', () => {
+            page.classList.toggle('flipcard');
+        })
+
+
+        for(let i = 0; i < secdata.stats.length; i++) {
+            console.log(stats[i].stat.name + ":" + stats[i].base_stat);
+        }
+
+        console.log(stats);
+
         main.appendChild(page);
-        page.appendChild(sprite);
-        page.appendChild(name);
+        page.appendChild(frontSide);
+        frontSide.appendChild(sprite);
+        frontSide.appendChild(name);
+
+        page.appendChild(backSide);
+        backSide.appendChild(hp);
+        backSide.appendChild(defense);
+        backSide.appendChild(damage);
+        backSide.appendChild(speed);
     }
 
 }
 
 async function PagesGenerator() {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=60&offset=0`);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=30&offset=0`);
     const data = await response.json();
     const main = document.querySelector('.main');
 
@@ -73,8 +101,8 @@ async function PagesGenerator() {
 }
 
 
-const itemsCount =  60;
-let itemsLoaded = 60;
+const itemsCount =  30;
+let itemsLoaded = 30;
 
 
 async function loadmore() {
@@ -88,13 +116,8 @@ async function loadmore() {
 
     pageLoad(data, main);
 
-    console.log(itemsCount);
-    console.log(itemsLoaded);
-
 }
 
 
-// awe();
-// loadmore();
 PagesGenerator();
-// filterfunc();
+filterfunc();
