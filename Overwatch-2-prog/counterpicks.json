@@ -1,0 +1,334 @@
+[
+	{
+		"hero": "D.Va",
+		"type": "tank",
+		"tank": ["Zarya", "Winston", "Doomfist", "Roadhog", "Sigma"],
+		"damage": ["Symmetra", "Reaper"],
+		"support": ["Moira", "Brigitte"]
+	},
+	{
+		"hero": "Doomfist",
+		"type": "tank",
+		"tank": ["Roadhog"],
+		"damage": ["Ashe", "Cassidy", "Pharah", "Mei"],
+		"support": ["Ana", "Brigitte"]
+	},
+	{
+		"hero": "Junker Queen",
+		"type": "tank",
+		"tank": [""],
+		"damage": ["Ashe", "Cassidy", "Pharah", "Soldier:76", "Widowmaker"],
+		"support": ["Ana", "Baptiste", "Zenyatta"]
+	},
+	{
+		"hero": "Mauga",
+		"type": "tank",
+		"tank": ["D.Va", "Sigma"],
+		"damage": ["Bastion", "Genji"],
+		"support": ["Ana", "Kiriko"]
+	},
+	{
+		"hero": "Orisa",
+		"type": "tank",
+		"tank": ["D.Va"],
+		"damage": [
+			"Ashe",
+			"Echo",
+			"Hanzo",
+			"Pharah",
+			"Reaper",
+			"Sojourn",
+			"Sombra",
+			"Soldier:76",
+			"Widowmaker"
+		],
+		"support": ["Ana", "Kiriko", "Zenyatta", "Baptiste", "Lifeweaver"]
+	},
+	{
+		"hero": "Ramattra",
+		"type": "tank",
+		"tank": ["Mauga", "Orisa", "D.Va", "Roadhog"],
+		"damage": ["Bastion", "Symmetra", "Tracer"],
+		"support": ["Zenyatta", "Kiriko"]
+	},
+	{
+		"hero": "Reinhardt",
+		"type": "tank",
+		"tank": [""],
+		"damage": ["Junkrat", "Mei", "Pharah", "Reaper", "Sombra", "Tracer"],
+		"support": ["Ana", "Brigitte"]
+	},
+	{
+		"hero": "Roadhog",
+		"type" : "tank",
+		"tank": [""],
+		"damage": [
+			"Genji",
+			"Echo",
+			"Junkrat",
+			"Pharah",
+			"Reaper",
+			"Sombra",
+			"Tracer",
+			"Widowmaker"
+		],
+		"support": ["Ana"]
+		
+	},
+	{
+		"hero": "Sigma",
+		"type": "tank",
+		"tank": ["Zarya"],
+		"damage": ["Genji", "Sombra", "Symmetra", "Tracer"],
+		"support": ["Lucio", "Moira"]
+	},
+	{
+		"hero": "Winston",
+		"type": "tank",
+		"tank": ["Roadhog", "Mauga"],
+		"damage": ["Bastion", "Mei"],
+		"support": ["Brigitte"]
+	},
+	{
+		"hero": "Wrecking Ball",
+		"type": "tank",
+		"tank": ["Roadhog"],
+		"damage": ["Mei", "Torbjorn"],
+		"support": ["Ana", "Brigitte"]
+	},
+	{
+		"hero": "Zarya",
+		"type": "tank",
+		"tank": ["D.Va"],
+		"damage": ["Ashe", "Bastion", "Echo", "Pharah", "Widowmaker"],
+		"support": [""]
+	},
+	{
+		"hero": "Ashe",
+		"type": "damage",
+		"tank": ["Doomfist", "Mauga", "Roadhog", "Wrecking Ball"],
+		"damage": ["Echo", "Genji", "Soldier:76", "Sombra", "Tracer"],
+		"support": ["Kiriko"]
+	},
+	{
+		"hero": "Bastion",
+		"type": "damage",
+		"tank": ["Zarya", "Roadhog", "Sigma"],
+		"damage": ["Junkrat", "Pharah", "Genji", "Tracer", "Sombra"],
+		"support": ["Ana"]
+	},
+	{
+		"hero": "Cassidy",
+		"type": "damage",
+		"tank": [""],
+		"damage": ["Ashe", "Bastion", "Genji", "Hanzo", "Widowmaker"],
+		"support": ["Ana"]
+	},
+	{
+		"hero": "Echo",
+		"type": "damage",
+		"tank": ["Junker Queen", "D.Va", "Mauga", "Zarya"],
+		"damage": ["Ashe", "Cassidy", "Soldier:76", "Widowmaker"],
+		"support": ["Ana", "Baptiste", "Moira"]
+	},
+	{
+		"hero": "Genji",
+		"type": "damage",
+		"tank": ["Winston", "Zarya"],
+		"damage": ["Symmetra", "Mei", "Sombra"],
+		"support": ["Moira", "Brigitte"]
+	},
+	{
+		"hero": "Hanzo",
+		"type": "damage",
+		"tank": ["D.Va", "Wrecking Ball"],
+		"damage": ["Tracer", "Pharah", "Genji", "Sombra"],
+		"support": ["Lucio", "Moira"]
+	},
+	{
+		"hero": "Junkrat",
+		"type": "damage",
+		"tank": ["D.Va", "Wrecking Ball", "Roadhog"],
+		"damage": [
+			"Ashe",
+			"Cassidy",
+			"Echo",
+			"Genji",
+			"Pharah",
+			"Soldier:76",
+			"Sombra",
+			"Tracer"
+		],
+		"support": ["Lucio"]
+	},
+	{
+		"hero": "Mei",
+		"type": "damage",
+		"tank": [""],
+		"damage": ["Sombra", "Pharah", "Echo", "Reaper", "Tracer"],
+		"support": ["Lifeweaver"]
+	},
+	{
+		"hero": "Pharah",
+		"type": "damage",
+		"tank": ["D.Va"],
+		"damage": [
+			"Soldier:76",
+			"Cassidy",
+			"Ashe",
+			"Widowmaker",
+			"Sombra",
+			"Torbjorn"
+		],
+		"support": ["Baptiste", "Ana"]
+	},
+	{
+		"hero": "Reaper",
+		"type": "damage",
+		"tank": ["Ramattra", "Junker Queen"],
+		"damage": ["Pharah", "Junkrat", "Ashe", "Widowmaker", "Echo"],
+		"support": ["Ana"]
+	},
+	{
+		"hero": "Sojourn",
+		"type": "damage",
+		"tank": ["D.Va", "Orisa", "Sigma", "Zarya"],
+		"damage": ["Reaper", "Tracer", "Sombra"],
+		"support": ["Lucio"]
+	},
+	{
+		"hero": "Soldier:76",
+		"type": "damage",
+		"tank": ["Roadhog", "D.Va"],
+		"damage": ["Cassidy", "Genji", "Widowmaker", "Reaper"],
+		"support": ["Ana"]
+	},
+	{
+		"hero": "Sombra",
+		"type": "damage",
+		"tank": ["Winston", "Zarya"],
+		"damage": ["Pharah", "Junkrat", "Mei"],
+		"support": ["Kiriko", "Ana", "Brigitte", "Moira"]
+	},
+	{
+		"hero": "Symmetra",
+		"type": "damage",
+		"tank": ["Winston"],
+		"damage": ["Pharah", "Junkrat", "Echo", "Sombra", "Tracer", "Reaper"],
+		"support": [""]
+	},
+	{
+		"hero": "Torbjorn",
+		"type": "damage",
+		"tank": [""],
+		"damage": ["Bastion", "Junkrat", "Pharah", "Widowmaker"],
+		"support": ["Ana"]
+	},
+	{
+		"hero": "Tracer",
+		"type": "damage",
+		"tank": [""],
+		"damage": ["Junkrat", "Pharah", "Sombra"],
+		"support": ["Ana"]
+	},
+    {
+			"hero": "Venture",
+			"type": "damage",
+			"tank": ["Doomfist", "Orisa", "Roadhog", "Zarya"],
+			"damage": ["Cassidy", "Echo", "Junkrat", "Pharah", "Reaper", "Sombra"],
+			"support": ["Brigitte", "Lucio"]
+		},
+	{
+		"hero": "Widowmaker",
+		"type": "damage",
+		"tank": ["D.Va", "Winston"],
+		"damage": ["Genji", "Tracer", "Sombra"],
+		"support": [""]
+	},
+	{
+		"hero": "Ana",
+		"type": "support",
+		"tank": ["Winston", "D.Va"],
+		"damage": ["Echo", "Pharah", "Tracer", "Sombra", "Genji"],
+		"support": ["Kiriko", "Lucio", "Moira"]
+	},
+	{
+		"hero": "Baptiste",
+		"type": "support",
+		"tank": ["Roadhog"],
+		"damage": [
+			"Echo",
+			"Genji",
+			"Hanzo",
+			"Pharah",
+			"Reaper",
+			"Sombra",
+			"Tracer"
+		],
+		"support": ["Lucio"]
+	},
+	{
+		"hero": "Brigitte",
+		"type": "support",
+		"tank": [""],
+		"damage": ["Ashe", "Junkrat", "Pharah"],
+		"support": [""]
+	},
+	{
+		"hero": "Illari",
+		"type": "support",
+		"tank": ["Orisa", "D.Va"],
+		"damage": ["Genji", "Sombra"],
+		"support": ["Baptiste", "Lifeweaver", "Lucio"]
+	},
+	{
+		"hero": "Kiriko",
+		"type": "support",
+		"tank": ["Doomfist", "Wrecking Ball"],
+		"damage": ["Cassidy", "Ashe", "Genji", "Sojourn", "Tracer", "Widowmaker"],
+		"support": ["Baptiste", "Moira"]
+	},
+	{
+		"hero": "Lifeweaver",
+		"type": "support",
+		"tank": ["Mauga", "Ramattra", "Roadhog"],
+		"damage": ["Sombra", "Widowmaker"],
+		"support": ["Mercy", "Moira"]
+	},
+	{
+		"hero": "Lucio",
+		"type": "support",
+		"tank": ["Winston", "Mauga", "Zarya"],
+		"damage": ["Soldier:76", "Cassidy", "Ashe", "Symmetra", "Torbjorn", "Mei"],
+		"support": ["Moira"]
+	},
+	{
+		"hero": "Mercy",
+		"type": "support",
+		"tank": ["Winston", "Roadhog", "Wrecking Ball"],
+		"damage": ["Ashe", "Cassidy", "Genji", "Tracer", "Soldier:76"],
+		"support": ["Moira", "Baptiste"]
+	},
+	{
+		"hero": "Moira",
+		"type": "support",
+		"tank": ["D.Va"],
+		"damage": [
+			"Echo",
+			"Pharah",
+			"Widowmaker",
+			"Sojourn",
+			"Ashe",
+			"Soldier:76",
+			"Reaper"
+		],
+		"support": ["Ana", "Baptiste"]
+	},
+	{
+		"hero": "Zenyatta",
+		"type": "support",
+		"tank": ["D.Va", "Sigma"],
+		"damage": ["Echo", "Genji", "Pharah", "Reaper", "Tracer", "Widowmaker"],
+		"support": ["Kiriko", "Zenyatta"]
+	}
+]

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwatch 2 | Counters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Enemy Comp</h1>
+
+        <div class="heroes-card">
+            <div class="hero">
+                <img src="assets/Logo for site a e181c45e-3bb9-4633-a1e9-b9bdefb0ca05.png">
+                <label for="role-selector1">Choose Role</label>
+                <select class="role-selector" name="role" id="role-selector1">
+                    <option value="-">-</option>
+                    <option value="Tank">Tank</option>
+                    <option value="Damage">Damage</option>
+                    <option value="Support">Support</option>
+                </select>
+
+                <label for="hero1">Choose the hero</label>
+                <select class="hero-selector" name="hero-selector1" id="hero1">
+                    <option value="-">-</option>
+                    <optgroup id="tank" label="Tank">
+                    <option value="D.Va">D.Va</option>
+                    <option value="Doomfist">Doomfist</option>
+                    <option value="Junker-Queen">Junker Queen</option>
+                    <option value="Mauga">Mauga</option>
+                    <option value="Orisa">Orisa</option>
+                    <option value="Ramattra">Ramattra</option>
+                    <option value="Reinhardt">Reinhardt</option>
+                    <option value="Roadhog">Roadhog</option>
+                    <option value="Sigma">Sigma</option>
+                    <option value="Winston">Winston</option>
+                    <option value="Wrecking-Ball">Wrecking Ball</option>
+                    <option value="Zarya">Zarya</option>
+                    </optgroup>
+
+
+                    <optgroup id="damage" label="Damage">
+                    <option value="Ashe">Ashe</option>
+                    <option value="Bastion">Bastion</option>
+                    <option value="Cassidy">Cassidy</option>
+                    <option value="Echo">Echo</option>
+                    <option value="Genji">Genji</option>
+                    <option value="Hanzo">Hanzo</option>
+                    <option value="Junkrat">Junkrat</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Pharah">Pharah</option>
+                    <option value="Reaper">Reaper</option>
+                    <option value="Sojourn">Sojourn</option>
+                    <option value="Soldier:76">Soldier:76</option>
+                    <option value="Sombra">Sombra</option>
+                    <option value="Symmetra">Symmetra</option>
+                    <option value="Torbjorn">Torbjörn</option>
+                    <option value="Tracer">Tracer</option>
+                    <option value="Venture">Venture</option>
+                    <option value="Widowmaker">Widowmaker</option>
+                    </optgroup>
+
+                    <optgroup id="support" label="Support">
+                    <option value="Ana">Ana</option>
+                    <option value="Baptiste">Baptiste</option>
+                    <option value="Brigitte">Brigitte</option>
+                    <option value="Illari">Illari</option>
+                    <option value="Kiriko">Kiriko</option>
+                    <option value="Lifeweaver">Lifeweaver</option>
+                    <option value="Lucio">Lúcio</option>
+                    <option value="Mercy">Mercy</option>
+                    <option value="Moira">Moira</option>
+                    <option value="Zenyatta">Zenyatta</option>
+                    </optgroup> 
+                </select>
+            </div>
+
+            <div class="hero">
+                <img src="assets/Logo for site a e181c45e-3bb9-4633-a1e9-b9bdefb0ca05.png">
+                <label for="role-selector2">Choose Role</label>
+                <select class="role-selector" name="role" id="role-selector2">
+                    <option value="-">-</option>
+                    <option value="Tank">Tank</option>
+                    <option value="Damage">Damage</option>
+                    <option value="Support">Support</option>
+                </select>
+
+                 <label for="hero2">Choose the hero</label>
+                <select class="hero-selector" name="" id="hero2">
+                    <option value="-">-</option>
+
+                    <optgroup label="Tank">
+                    <option value="D.Va">D.Va</option>
+                    <option value="Doomfist">Doomfist</option>
+                    <option value="Junker-Queen">Junker Queen</option>
+                    <option value="Mauga">Mauga</option>
+                    <option value="Orisa">Orisa</option>
+                    <option value="Ramattra">Ramattra</option>
+                    <option value="Reinhardt">Reinhardt</option>
+                    <option value="Roadhog">Roadhog</option>
+                    <option value="Sigma">Sigma</option>
+                    <option value="Winston">Winston</option>
+                    <option value="Wrecking-Ball">Wrecking Ball</option>
+                    <option value="Zarya">Zarya</option>
+                    </optgroup>
+
+
+                    <optgroup label="Damage">
+                    <option value="Ashe">Ashe</option>
+                    <option value="Bastion">Bastion</option>
+                    <option value="Cassidy">Cassidy</option>
+                    <option value="Echo">Echo</option>
+                    <option value="Genji">Genji</option>
+                    <option value="Hanzo">Hanzo</option>
+                    <option value="Junkrat">Junkrat</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Pharah">Pharah</option>
+                    <option value="Reaper">Reaper</option>
+                    <option value="Sojourn">Sojourn</option>
+                    <option value="Soldier:76">Soldier:76</option>
+                    <option value="Sombra">Sombra</option>
+                    <option value="Symmetra">Symmetra</option>
+                    <option value="Torbjorn">Torbjörn</option>
+                    <option value="Tracer">Tracer</option>
+                    <option value="Venture">Venture</option>
+                    <option value="Widowmaker">Widowmaker</option>
+                    </optgroup>
+
+                    <optgroup label="Support">
+                    <option value="Ana">Ana</option>
+                    <option value="Baptiste">Baptiste</option>
+                    <option value="Brigitte">Brigitte</option>
+                    <option value="Illari">Illari</option>
+                    <option value="Kiriko">Kiriko</option>
+                    <option value="Lifeweaver">Lifeweaver</option>
+                    <option value="Lucio">Lúcio</option>
+                    <option value="Mercy">Mercy</option>
+                    <option value="Moira">Moira</option>
+                    <option value="Zenyatta">Zenyatta</option>
+                    </optgroup> 
+                </select>
+            </div>
+
+            <div class="hero">
+                <img src="assets/Logo for site a e181c45e-3bb9-4633-a1e9-b9bdefb0ca05.png">
+                <label for="role-selector3">Choose Role</label>
+                <select class="role-selector" name="role" id="role-selector3">
+                    <option value="-">-</option>
+                    <option value="Tank">Tank</option>
+                    <option value="Damage">Damage</option>
+                    <option value="Support">Support</option>
+                </select>
+
+                <label for="hero3">Choose the hero</label>
+                <select class="hero-selector" name="" id="hero3">
+                    <option value="-">-</option>
+
+                    <optgroup label="Tank">
+                    <option value="D.Va">D.Va</option>
+                    <option value="Doomfist">Doomfist</option>
+                    <option value="Junker-Queen">Junker Queen</option>
+                    <option value="Mauga">Mauga</option>
+                    <option value="Orisa">Orisa</option>
+                    <option value="Ramattra">Ramattra</option>
+                    <option value="Reinhardt">Reinhardt</option>
+                    <option value="Roadhog">Roadhog</option>
+                    <option value="Sigma">Sigma</option>
+                    <option value="Winston">Winston</option>
+                    <option value="Wrecking-Ball">Wrecking Ball</option>
+                    <option value="Zarya">Zarya</option>
+                    </optgroup>
+
+
+                    <optgroup label="Damage">
+                    <option value="Ashe">Ashe</option>
+                    <option value="Bastion">Bastion</option>
+                    <option value="Cassidy">Cassidy</option>
+                    <option value="Echo">Echo</option>
+                    <option value="Genji">Genji</option>
+                    <option value="Hanzo">Hanzo</option>
+                    <option value="Junkrat">Junkrat</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Pharah">Pharah</option>
+                    <option value="Reaper">Reaper</option>
+                    <option value="Sojourn">Sojourn</option>
+                    <option value="Soldier:76">Soldier:76</option>
+                    <option value="Sombra">Sombra</option>
+                    <option value="Symmetra">Symmetra</option>
+                    <option value="Torbjorn">Torbjörn</option>
+                    <option value="Tracer">Tracer</option>
+                    <option value="Venture">Venture</option>
+                    <option value="Widowmaker">Widowmaker</option>
+                    </optgroup>
+
+                    <optgroup label="Support">
+                    <option value="Ana">Ana</option>
+                    <option value="Baptiste">Baptiste</option>
+                    <option value="Brigitte">Brigitte</option>
+                    <option value="Illari">Illari</option>
+                    <option value="Kiriko">Kiriko</option>
+                    <option value="Lifeweaver">Lifeweaver</option>
+                    <option value="Lucio">Lúcio</option>
+                    <option value="Mercy">Mercy</option>
+                    <option value="Moira">Moira</option>
+                    <option value="Zenyatta">Zenyatta</option>
+                    </optgroup> 
+                </select>
+            </div>
+
+            <div class="hero">
+                <img src="assets/Logo for site a e181c45e-3bb9-4633-a1e9-b9bdefb0ca05.png">
+                <label for="role-selector4">Choose Role</label>
+                <select class="role-selector" name="role" id="role-selector4">
+                    <option value="-">-</option>
+                    <option value="Tank">Tank</option>
+                    <option value="Damage">Damage</option>
+                    <option value="Support">Support</option>
+                </select>
+
+                 <label for="hero4">Choose the hero</label>
+                <select class="hero-selector" name="hero-selector" id="hero4">
+                    <option value="-">-</option>
+
+                    <optgroup label="Tank">
+                    <option value="D.Va">D.Va</option>
+                    <option value="Doomfist">Doomfist</option>
+                    <option value="Junker-Queen">Junker Queen</option>
+                    <option value="Mauga">Mauga</option>
+                    <option value="Orisa">Orisa</option>
+                    <option value="Ramattra">Ramattra</option>
+                    <option value="Reinhardt">Reinhardt</option>
+                    <option value="Roadhog">Roadhog</option>
+                    <option value="Sigma">Sigma</option>
+                    <option value="Winston">Winston</option>
+                    <option value="Wrecking-Ball">Wrecking Ball</option>
+                    <option value="Zarya">Zarya</option>
+                    </optgroup>
+
+
+                    <optgroup label="Damage">
+                    <option value="Ashe">Ashe</option>
+                    <option value="Bastion">Bastion</option>
+                    <option value="Cassidy">Cassidy</option>
+                    <option value="Echo">Echo</option>
+                    <option value="Genji">Genji</option>
+                    <option value="Hanzo">Hanzo</option>
+                    <option value="Junkrat">Junkrat</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Pharah">Pharah</option>
+                    <option value="Reaper">Reaper</option>
+                    <option value="Sojourn">Sojourn</option>
+                    <option value="Soldier:76">Soldier:76</option>
+                    <option value="Sombra">Sombra</option>
+                    <option value="Symmetra">Symmetra</option>
+                    <option value="Torbjorn">Torbjörn</option>
+                    <option value="Tracer">Tracer</option>
+                    <option value="Venture">Venture</option>
+                    <option value="Widowmaker">Widowmaker</option>
+                    </optgroup>
+
+                    <optgroup label="Support">
+                    <option value="Ana">Ana</option>
+                    <option value="Baptiste">Baptiste</option>
+                    <option value="Brigitte">Brigitte</option>
+                    <option value="Illari">Illari</option>
+                    <option value="Kiriko">Kiriko</option>
+                    <option value="Lifeweaver">Lifeweaver</option>
+                    <option value="Lucio">Lúcio</option>
+                    <option value="Mercy">Mercy</option>
+                    <option value="Moira">Moira</option>
+                    <option value="Zenyatta">Zenyatta</option>
+                    </optgroup> 
+                </select>
+            </div>
+            
+            <div class="hero">
+                <img src="assets/Logo for site a e181c45e-3bb9-4633-a1e9-b9bdefb0ca05.png">
+
+                <label for="role-selector5">Choose Role</label>
+                <select class="role-selector" name="role" id="role-selector5">
+                    <option value="-"> - </option>
+                    <option value="Tank">Tank</option>
+                    <option value="Damage">Damage</option>
+                    <option value="Support">Support</option>
+                </select>
+
+                <label for="hero5">Choose the hero</label>
+                <select class="hero-selector" name="hero-selector" id="hero5">
+                    <option value="-">-</option>
+
+                    <optgroup label="Tank">
+                    <option value="D.Va">D.Va</option>
+                    <option value="Doomfist">Doomfist</option>
+                    <option value="Junker-Queen">Junker Queen</option>
+                    <option value="Mauga">Mauga</option>
+                    <option value="Orisa">Orisa</option>
+                    <option value="Ramattra">Ramattra</option>
+                    <option value="Reinhardt">Reinhardt</option>
+                    <option value="Roadhog">Roadhog</option>
+                    <option value="Sigma">Sigma</option>
+                    <option value="Winston">Winston</option>
+                    <option value="Wrecking-Ball">Wrecking Ball</option>
+                    <option value="Zarya">Zarya</option>
+                    </optgroup>
+
+                    <optgroup label="Damage">
+                    <option value="Ashe">Ashe</option>
+                    <option value="Bastion">Bastion</option>
+                    <option value="Cassidy">Cassidy</option>
+                    <option value="Echo">Echo</option>
+                    <option value="Genji">Genji</option>
+                    <option value="Hanzo">Hanzo</option>
+                    <option value="Junkrat">Junkrat</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Pharah">Pharah</option>
+                    <option value="Reaper">Reaper</option>
+                    <option value="Sojourn">Sojourn</option>
+                    <option value="Soldier:76">Soldier:76</option>
+                    <option value="Sombra">Sombra</option>
+                    <option value="Symmetra">Symmetra</option>
+                    <option value="Torbjorn">Torbjörn</option>
+                    <option value="Tracer">Tracer</option>
+                    <option value="Venture">Venture</option>
+                    <option value="Widowmaker">Widowmaker</option>
+                    </optgroup>
+
+                    <optgroup label="Support">
+                    <option value="Ana">Ana</option>
+                    <option value="Baptiste">Baptiste</option>
+                    <option value="Brigitte">Brigitte</option>
+                    <option value="Illari">Illari</option>
+                    <option value="Kiriko">Kiriko</option>
+                    <option value="Lifeweaver">Lifeweaver</option>
+                    <option value="Lucio">Lúcio</option>
+                    <option value="Mercy">Mercy</option>
+                    <option value="Moira">Moira</option>
+                    <option value="Zenyatta">Zenyatta</option>
+                    </optgroup> 
+                </select>
+
+            </div>
+        </div>
+
+        <div class="button-container">  
+            <button id="showCounter">Show Counter</button>
+
+             <select class="your-role-selector" name="role" id="your-role-selector">
+                <option value="-">Select Your Role</option>
+                <option value="Tank">Tank</option>
+                <option value="Damage">Damage</option>
+                <option value="Support">Support</option>
+            </select>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
