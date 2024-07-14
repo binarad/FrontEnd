@@ -1,19 +1,8 @@
-//     const response = await fetch('https://overfast-api.tekrop.fr/roles');
-const fetchData = async () => {
-	const response = await fetch('./counterpicks.json')
-	const data = await response.json()
-
-	console.log(data)
-}
-
-// fetchData();
 let heroes = document.querySelectorAll('.hero-selector');
 heroes = Array.prototype.slice.call(heroes);
 
-
 let roles = document.querySelectorAll(".role-selector");
 roles = Array.prototype.slice.call(roles);
-
 
 let yourRoleValue = document.querySelector("#your-role-selector").value;
 let showCounterBtn = document.querySelector("#showCounter");
